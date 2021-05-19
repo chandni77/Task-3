@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Academy Main Page</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    
+    body {
+        font-family: 'Baloo Bhai', cursive;     
+        margin: 5px;
+        padding: 0px; 
+        background-color: rgb(238, 197, 210);    
+    }
+    .container{
+        height: 80vh;
+        width: 98vw;
+        border: 2px;
+        background-color: rgb(214, 121, 152);
+    }
+    .container img{
+        float: right;
+        height: 81vh;
+        width: 42vw;
+        margin: -3% 3%;
+        padding: 1% 1%;
+    }
+    .text{
+        font-size: 5vw;
+        text-align: justify;
+        margin-top: 3%;
+        margin-left: 13%;
+        
+    }
+    .small{
+        margin-left: 13%;
+        font-size: 2vw;
+        color: white;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        
+    }
+    .left img{
+        width: 7vw;
+        height: 7vw;
+        margin: 2px 20px;
+    
+    }
+    .left div {
+        line-height: 19px;
+        font-size: 1vw;
+        text-align: center;
+        line-height: 1;
+        margin-top: -9px;
+    }
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 34px auto;
+        border: 2px solid rgb(2, 2, 2); 
+        
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /*border: 2px solid yellow; */
+    }
+    .nav {
+        display: inline-block;
+    }
+
+    .nav li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .nav li a {
+        color: black;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    } 
+    .nav li a:hover {
+        text-decoration: underline;
+        color: rgb(39, 221, 206);
+
+    }
+    
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color:black;
+        color: rgb(252, 248, 248);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 1.5vw;
+        cursor: pointer;
+    }
+    .btn a{
+        text-decoration: none;
+        color: white;
+    }
+    .btn:hover {
+        background-color: rgb(46, 236, 236);
+    }
+
+    .con{
+        height: 50%;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .item{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(230, 130, 130);
+        border: 5px solid black;
+        margin: 10px;
+        padding: 3px;
+        border-radius: 17px;
+    }
+    .item img{
+        width: 260px;
+        height: 260px;
+        margin: 7px 20px 1px 20px;
+    }
+    .item p{
+        text-align: center;
+        margin: -10px auto;
+        font-size: 25px;
+    }
+    .end{
+        height: 50%;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        background-color: #856495;
+    }
+    .last{
+        width: 350px;
+        height: 300px;
+        /*background-color: rgb(230, 130, 130);*/
+        border: 0px solid black;
+        margin: 20px;
+        padding: 5px;
+        border-radius: 17px;
+    }
+    @media (max-width: 500px){
+        #mainpic{
+            visibility: hidden;
+        }
+    }
+    @media (max-width: 500px){
+        #container{
+            height: 40vh;
+        }
+    }
+</style>    
+<body>
+    <header>
+        <div class="left">
+            <img src="ceca1.jpg" alt="">
+            <div>Moonlight Dance<br>Studio</div>
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#1">About Us</a></li>
+                <li><a href="#2">Dance Styles</a></li>
+                <li><a href="#3">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><a href="Task3.1.html">Register</a></button>
+        </div>
+    </header>    
+    <marquee behavior="solid" direction="" style="color: blueviolet;">Click on "Register Now" to open registration form.</marquee>
+    <div class="container" id="container">
+        <div>
+            <img id="mainpic" src="Picture1.png" alt="">
+            <div class="text">Dance Classes<br>for Everyone</div> 
+            <div class="small">Dance is the joy of movement and the heart of life.</div>
+            <button style="margin-left: 15%; font-size: 2vw; margin-top: 30px;" class="btn"><a href="Task3.1.html">Register Now</a></button>
+        </div>
+    </div>
+    <div>
+        <p id="2" style="font-size: 51px;margin: 10px 20px;">Dance Styles</p>
+        <div class="con">
+            <div class="item" id="item-1">
+                <img src="i.jfif" alt="">
+                <p>Hip Hop</p>
+            </div>
+            <div class="item" id="item-2">
+                <img src="jazz.jpg" alt="">
+                <p>Jazz</p>
+            </div>
+            <div class="item" id="item-3">
+                <img src="kathak-dance-lucknow-700x453.jpg" alt="">
+                <p>Kathak</p>
+            </div>
+            <div class="item" id="item-4">
+                <img src="contem.jfif" alt="">
+                <p>Contemporary</p>
+            </div>
+            <div class="item" id="item-5">
+                <img src="Bharata_Natyam_Performance_DS.jpg" alt="">
+                <p>Bharatanatyam</p>
+            </div>
+            <div class="item" id="item-6">
+                <img src="tap.jfif" alt="">
+                <p>Tap Dance</p>
+            </div>
+            <div class="item" id="item-5">
+                <img src="Odissi.jpg" alt="">
+                <p>Odissi</p>
+            </div>
+            <div class="item" id="item-6">
+                <img src="break1.jpg" alt="">
+                <p>Break Dance</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="last">
+        <p id="1" style="font-size: 51px;margin: 10px 20px; text-align: center;">About Us</p>
+        <div style="text-align: justify; color: white;">Moonlight Dance Studio offers award-winning dance instruction focused on providing a positive atmosphere where our teachers encourage dancers to maximize their talents and have fun. Our goal is to inspire each dancer and foster his or her passion for dance. We are proud to serve our students with trend-setting dance education for the 21st century.</div></div>
+      
+        <div class="last">
+        <p id="3" style="font-size: 51px;margin: 10px 20px; text-align: center;">Contact Us</p>
+        <div style="text-align: center; font-size: 25px; color: white;">Mob.: 9650174742<br>Mob.: 9871718834<br>Phone: 0120-6490504<br>moonlightstudio@gmail.com</div></div>
+
+        <div class="last">
+        <p style="font-size: 51px;margin: 10px 20px; text-align: center;">Address</p>
+        <div style="text-align: center; color: white; font-size: 20px;">251/4 M-Block, Inner Circle<br>Canought Place, New Delhi<br>PIN-110001</div>
+        </div>
+    </div>
+</body>
+</html>
